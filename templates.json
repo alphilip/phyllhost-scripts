@@ -1,0 +1,130 @@
+[
+  {
+    "id": "1",
+    "slug": "01-whatsapp-bot",
+    "name": "WhatsApp Bot (Baileys)",
+    "description": "QR + pairing-code login, self-DM commands, stickers, video/audio downloader, AI chat, utilities, group tools & moderation",
+    "env_prompts": [
+      {
+        "key": "OWNER_NUMBER",
+        "label": "Your WhatsApp number (digits only, e.g. 233509032295)",
+        "required": true
+      },
+      {
+        "key": "BOT_NAME",
+        "label": "Bot name (default: MyBot)",
+        "required": false
+      },
+      {
+        "key": "PAIRING_CODE",
+        "label": "Use 8-digit pairing code instead of QR? (true/false, default: false)",
+        "required": false
+      },
+      {
+        "key": "GROQ_API_KEY",
+        "label": "Groq API Key for .ai (optional, press Enter to skip)",
+        "required": false
+      },
+      {
+        "key": "GEMINI_API_KEY",
+        "label": "Gemini API Key for .ai (optional, press Enter to skip)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "02-discord-mod-bot",
+    "name": "Discord Moderation Bot (discord.js v14)",
+    "description": "Slash + !prefix commands, verify role, kick/ban/timeout/warn, tickets with transcripts, auto-mod, XP/levels",
+    "env_prompts": [
+      {
+        "key": "DISCORD_TOKEN",
+        "label": "Discord Bot Token (from Discord Developer Portal)",
+        "required": true
+      },
+      {
+        "key": "CLIENT_ID",
+        "label": "Discord Application Client ID (for slash commands)",
+        "required": true
+      },
+      {
+        "key": "GUILD_ID",
+        "label": "Test Server Guild ID (optional, press Enter for global)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "03-telegram-notify-bot",
+    "name": "Telegram Notify & Digest Bot (Telegraf)",
+    "description": "Subscriber management, per-chat alert levels, daily cron digest, and HTTP POST /alert webhook endpoint",
+    "env_prompts": [
+      {
+        "key": "TELEGRAM_BOT_TOKEN",
+        "label": "Telegram Bot Token (from @BotFather)",
+        "required": true
+      },
+      {
+        "key": "OWNER_CHAT_ID",
+        "label": "Your Telegram Chat ID (from @userinfobot)",
+        "required": true
+      },
+      {
+        "key": "PORT",
+        "label": "HTTP Alert Webhook Port (default: 3000)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "04-paystack-webhook",
+    "name": "Paystack Webhook Receiver (Express)",
+    "description": "HMAC-SHA512 signature verification, fast-200 response, idempotency store, JSON event logs & exponential backoff retry queue",
+    "env_prompts": [
+      {
+        "key": "PAYSTACK_SECRET_KEY",
+        "label": "Paystack Secret Key (sk_test_... or sk_live_...)",
+        "required": true
+      },
+      {
+        "key": "PORT",
+        "label": "Server Port (default: 3000)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "05-price-tracker",
+    "name": "Multi-Target Price & Stock Tracker",
+    "description": "Tracks product pages on a schedule, logs price history, and fires price-drop & back-in-stock webhook alerts",
+    "env_prompts": [
+      {
+        "key": "WEBHOOK_URL",
+        "label": "Webhook URL for alerts (optional, press Enter for console only)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "06-scheduler",
+    "name": "Cron Job Scheduler (Log, Webhook & Shell)",
+    "description": "Runs recurring cron jobs from jobs.json with retries, overlap protection, run history, and /health + /jobs status API",
+    "env_prompts": [
+      {
+        "key": "TZ",
+        "label": "Timezone (default: Africa/Accra)",
+        "required": false
+      },
+      {
+        "key": "STATUS_PORT",
+        "label": "Status HTTP Port (default: 3000, 0 to disable)",
+        "required": false
+      }
+    ]
+  }
+]
