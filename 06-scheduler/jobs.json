@@ -1,0 +1,30 @@
+[
+  {
+    "name": "morning-reminder",
+    "type": "log",
+    "schedule": "0 8 * * *",
+    "message": "Good morning! Time to check today's orders and reply to customers."
+  },
+  {
+    "name": "weekly-health-ping",
+    "type": "webhook",
+    "schedule": "0 9 * * 1",
+    "message": "Weekly health check from the scheduler",
+    "url": "https://example.com/your-webhook-endpoint",
+    "payload": {
+      "check": "weekly",
+      "source": "scheduler"
+    },
+    "retries": 5,
+    "retryDelayMs": 10000
+  },
+  {
+    "name": "disk-space-check",
+    "type": "shell",
+    "schedule": "0 7 * * *",
+    "message": "Daily disk space check",
+    "command": "df -h / | tail -1",
+    "retries": 2,
+    "shellTimeoutMs": 15000
+  }
+]
