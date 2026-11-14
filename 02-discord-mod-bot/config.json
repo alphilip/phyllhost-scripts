@@ -1,0 +1,50 @@
+{
+  "defaults": {
+    "automod": {
+      "badWords": [
+        "spamword1",
+        "spamword2"
+      ],
+      "blockInvites": true,
+      "enabled": true,
+      "spam": {
+        "enabled": true,
+        "maxMessages": 5,
+        "timeoutMinutes": 10,
+        "windowSeconds": 5
+      }
+    },
+    "goodbyeChannelId": "",
+    "goodbyeMessage": "{user} has left {server}.",
+    "logChannelId": "",
+    "modRoleId": "",
+    "ticketCategoryId": "",
+    "ticketCategoryName": "Tickets",
+    "verifiedRoleId": "",
+    "verifiedRoleName": "Verified",
+    "welcomeChannelId": "",
+    "welcomeMessage": "Welcome to {server}, {user}! Type /verify to get verified.",
+    "xp": {
+      "cooldownSeconds": 60,
+      "enabled": true,
+      "levelUpMessage": "{user} reached level {level}!",
+      "max": 25,
+      "min": 15
+    }
+  },
+  "guilds": {
+    "PASTE_YOUR_GUILD_ID_HERE": {
+      "automod": {
+        "badWords": [
+          "spamword1",
+          "spamword2"
+        ]
+      },
+      "goodbyeChannelId": "PASTE_YOUR_WELCOME_CHANNEL_ID_HERE",
+      "logChannelId": "PASTE_YOUR_LOG_CHANNEL_ID_HERE",
+      "ticketCategoryId": "",
+      "verifiedRoleId": "PASTE_YOUR_VERIFIED_ROLE_ID_HERE",
+      "welcomeChannelId": "PASTE_YOUR_WELCOME_CHANNEL_ID_HERE"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "discord.js": "^14.28.1",
+    "dotenv": "^16.4.5"
+  },
+  "description": "Full-featured Discord moderation bot — verification, moderation, tickets, auto-mod, levels/XP, welcome messages and utilities",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "discord-mod-bot",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "version": "2.0.0"
+}
