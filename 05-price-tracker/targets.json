@@ -1,0 +1,1 @@
+[{"checkIntervalMinutes":60,"cssSelector":".price","inStockSelector":".stock-status","name":"Example Wireless Headphones","targetPrice":49.99,"url":"https://example.com/products/wireless-headphones"},{"checkIntervalMinutes":120,"cssSelector":"#product-price","name":"Example Mechanical Keyboard","targetPrice":79.99,"url":"https://example.com/products/mechanical-keyboard"}]
